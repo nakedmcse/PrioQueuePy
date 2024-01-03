@@ -17,8 +17,7 @@ class dict_priority_queue:
     def enqueue(self, dataitem, prio):
         currentq = self.queue.get(prio)
         if currentq == None:
-            currentq = deque([dataitem])
-            self.queue[prio] = currentq
+            self.queue[prio] = deque([dataitem])
         else:
             currentq.append(dataitem)
 
