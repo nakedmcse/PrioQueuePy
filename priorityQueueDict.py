@@ -34,7 +34,7 @@ class dict_priority_queue:
 def get_pair():
     return (0-random.randint(1, 10), random.randint(0, RANGE))
 
-RANGE = 10000000
+RANGE = 10_000_000
 
 simple_prio = dict_priority_queue();
 print("Priority Enqueued 1:1, 2:1, 3:1, 4:5, 5:9")
